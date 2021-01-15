@@ -154,7 +154,13 @@ hr.solid {
 
 .post:hover
     {
-    box-shadow: 0 5px 25px var(--kindawhite);
+    box-shadow:
+    1px 1px 0px var(--kindawhite),
+    2px 2px 0px var(--kindawhite),
+    3px 3px 0px var(--kindawhite),
+    4px 4px 0px var(--kindawhite),
+    5px 5px 0px var(--kindawhite),
+    6px 6px 0px var(--kindawhite);
     transition: box-shadow 0.3s ease-in-out;
     }
 
@@ -184,13 +190,13 @@ button {
     padding-bottom: 10px;
     padding-left: 16px;
     padding-right: 16px;
-    border: none;
+    border: 2px solid var(--blackish);
     overflow: hidden;
     outline: none;
     min-width: 64px;
     cursor: pointer;
     position: relative;
-    margin: 20px;
+    margin-top: 14px;
 }
 
 button.primary {
@@ -198,11 +204,19 @@ button.primary {
     color: var(--blackish);
   }
 button.primary:hover {
-    background-image: linear-gradient(90deg, #4255FF 0%, #FF6D4D 18.95%, #84FF9F 31.31%, #E4D290 33.36%, #FF5A36 50.3%);
+    box-shadow:
+    1px 1px 0px var(--kindawhite),
+    2px 2px 0px var(--kindawhite),
+    3px 3px 0px var(--kindawhite),
+    4px 4px 0px var(--kindawhite),
+    5px 5px 0px var(--kindawhite),
+    6px 6px 0px var(--kindawhite);
+    background-color: var(--blackish);
     color: var(--kindawhite);
+    border: 2px solid var(--kindawhite);
   }
 button.primary:active {
-    background-color: rgb(173, 114, 228);
+    background-image: linear-gradient(90deg, #4255FF 0%, #FF6D4D 18.95%, #84FF9F 31.31%, #E4D290 33.36%, #FF5A36 50.3%);;
   }
 
 
