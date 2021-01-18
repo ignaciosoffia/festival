@@ -14,8 +14,9 @@ h1, h2, h3, h4, strong, p, li, span, label, em{
 }
 
 
-h1 {
+h1, span {
     font-size: 64px;
+    font-weight: 500;
     line-height: 64px;
     margin-top: 0;
     margin-bottom: 0;
@@ -255,7 +256,6 @@ button.primary:active {
     display: inline-block;
 
 }
-
 
 @media screen and (max-width: 1080px){
     .main-container{
