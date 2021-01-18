@@ -160,10 +160,6 @@ hr.solid {
     5px 5px 0px var(--kindawhite),
     6px 6px 0px var(--kindawhite);
     transition: box-shadow 0.3s ease-in-out;
-    background: -webkit-linear-gradient(0deg, #4255FF 0%, #FF6D4D 18.95%, #84FF9F 31.31%, #E4D290 33.36%, #FF5A36 50.3%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
     }
 
 .thumbnail{
