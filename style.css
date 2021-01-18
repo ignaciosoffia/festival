@@ -10,14 +10,9 @@ html, body{
     background-color: var(--blackish);
 }
 
-h1 {
-    color: var(--blublu);
-    font-family: helvetica, Arial, sans-serif;
-}
-
-h2, h3, strong, p, h4, li, span, label, em{
+h1, h2, h3, h4, strong, p, li, span, label, em{
     color: var(--kindawhite);
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Work Sans', Arial, sans-serif;
 }
 
 
@@ -26,15 +21,18 @@ h1 {
     line-height: 36px;
 }
 
-h2 {
+h2 label{
     font-size: 18px;
     line-height: 27px;
 }
 
-h3 { font-size: 14px;}
+h3 { font-size: 16px;
+     line-height: 24px;
+     margin: 0;
+}
 
 h4 {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 21px;
     margin: 0;
 }
@@ -61,7 +59,7 @@ a:link {
 }
 
 a:hover{
-    opacity: 0.75;
+    opacity: 0.8;
 }
 
 hr.solid {
@@ -162,6 +160,10 @@ hr.solid {
     5px 5px 0px var(--kindawhite),
     6px 6px 0px var(--kindawhite);
     transition: box-shadow 0.3s ease-in-out;
+    background: -webkit-linear-gradient(0deg, #4255FF 0%, #FF6D4D 18.95%, #84FF9F 31.31%, #E4D290 33.36%, #FF5A36 50.3%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
     }
 
 .thumbnail{
@@ -182,9 +184,9 @@ hr.solid {
 }
 
 button {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Work Sans', Arial, sans-serif;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 24px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -216,9 +218,32 @@ button.primary:hover {
     border: 2px solid var(--kindawhite);
   }
 button.primary:active {
-    background-image: linear-gradient(90deg, #4255FF 0%, #FF6D4D 18.95%, #84FF9F 31.31%, #E4D290 33.36%, #FF5A36 50.3%);;
+    background-image: linear-gradient(90deg, #4255FF 0%, #FF6D4D 18.95%, #84FF9F 31.31%, #E4D290 33.36%, #FF5A36 50.3%);
   }
 
+
+  .input {
+    font-family: 'Work Sans', Arial, sans-serif;
+    font-size: 14px;
+    color: var(--kindawhite);
+    padding: 0.25em 0.5em;
+    background-color: var(--blackish);
+    border: 2px solid var(--kindawhite);
+    border-radius: 0;
+    margin-top: 16px;
+    padding: 16px;
+  }
+
+  .input:active {
+    border: 2px solid var(--kindawhite);
+    margin-top: 16px;
+  }
+
+  .form{
+    grid-area: title;
+    display: grid;
+    max-width: 320px;
+}
 
 
 @media screen and (max-width: 1080px){
