@@ -17,8 +17,10 @@ h1, h2, h3, h4, strong, p, li, span, label, em{
 
 
 h1 {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 64px;
+    line-height: 64px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h2, label{
@@ -67,7 +69,12 @@ hr.solid {
   margin: 0px;
 }
 
+.s1 {
+    margin-bottom: 128px;
+}
+
 .s2{
+    margin-top: 32px;
     margin-bottom: 72px;
 }
 
@@ -160,7 +167,7 @@ hr.solid {
     5px 5px 0px var(--kindawhite),
     6px 6px 0px var(--kindawhite);
     transition: box-shadow 0.3s ease-in-out;
-    }
+}
 
 .thumbnail{
     display: block;
@@ -181,7 +188,7 @@ hr.solid {
 
 button {
     font-family: 'Work Sans', Arial, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     padding-top: 10px;
@@ -239,6 +246,13 @@ button.primary:active {
     grid-area: title;
     display: grid;
     max-width: 320px;
+}
+
+.gradient-text {
+    background-image: linear-gradient(90deg, #4255FF 0%, #FF6D4D 18.95%, #84FF9F 31.31%, #E4D290 33.36%, #FF5A36 50.3%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
 }
 
 
