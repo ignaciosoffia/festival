@@ -21,7 +21,7 @@ h1 {
     line-height: 36px;
 }
 
-h2 label{
+h2, label{
     font-size: 18px;
     line-height: 27px;
 }
