@@ -38,29 +38,31 @@ h4 {
     margin: 0;
 }
 
-p{
+p {
     font-size: 16px;
     line-height: 24px;
+    font-weight: 300;
 }
 
 a {
-    color: var(--kindawhite);
+    color: var(--blackish);
 }
 
 a:visited{
-    color: var(--kindawhite);
+    color: var(--blackish);
 }
 
 a:link{
-    color: var(--kindawhite);
-}
-
-a:link {
-  text-decoration: none;
+    color: var(--blackish);
 }
 
 a:hover{
-    opacity: 0.8;
+    opacity: 0.85;
+}
+
+.em {
+    margin-left: 10px;
+    font-size: 1rem;
 }
 
 hr.solid {
@@ -73,8 +75,8 @@ hr.solid {
 }
 
 .s2{
-    margin-top: 32px;
-    margin-bottom: 72px;
+    margin-top: 192px;
+    margin-bottom: 128px;
 }
 
 .s3{
@@ -83,7 +85,7 @@ hr.solid {
 
 .s4{
     margin-top: 128px;
-    margin-bottom: 128px;
+    margin-bottom: 0px;
 }
 
 .main-container{
@@ -109,17 +111,6 @@ hr.solid {
 
 
 }
-
-.theme-switch-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.em {
-    margin-left: 10px;
-    font-size: 1rem;
-}
-
 
 .title{
     grid-area: title;
@@ -185,16 +176,18 @@ hr.solid {
     margin: 0;
 }
 
-button {
+.button {
     font-family: 'Work Sans', Arial, sans-serif;
     font-size: 16px;
     font-weight: 500;
+    text-align: center;
+    color: var(--blackish);
     line-height: 24px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 16px;
     padding-right: 16px;
-    border: 2px solid var(--blackish);
+    border: 2px solid var(--kindawhite);
     overflow: hidden;
     outline: none;
     min-width: 64px;
@@ -203,11 +196,8 @@ button {
     margin-top: 14px;
 }
 
-button.primary {
-    background-color: var(--kindawhite);
-    color: var(--blackish);
-  }
-button.primary:hover {
+
+.button:hover {
     box-shadow:
     1px 1px 0px var(--kindawhite),
     2px 2px 0px var(--kindawhite),
@@ -215,16 +205,14 @@ button.primary:hover {
     4px 4px 0px var(--kindawhite),
     5px 5px 0px var(--kindawhite),
     6px 6px 0px var(--kindawhite);
-    background-color: var(--blackish);
-    color: var(--kindawhite);
     border: 2px solid var(--kindawhite);
   }
-button.primary:active {
+.button:active {
     background-image: linear-gradient(90deg, #4255FF 0%, #FF6D4D 18.95%, #84FF9F 31.31%, #E4D290 33.36%, #FF5A36 50.3%);
   }
 
 
-  .input {
+.input {
     font-family: 'Work Sans', Arial, sans-serif;
     font-size: 14px;
     color: var(--kindawhite);
@@ -236,12 +224,12 @@ button.primary:active {
     padding: 16px;
   }
 
-  .input:active {
+.input:active {
     border: 2px solid var(--kindawhite);
     margin-top: 16px;
   }
 
-  .form{
+.form{
     grid-area: title;
     display: grid;
     max-width: 320px;
@@ -276,5 +264,4 @@ button.primary:active {
 @media screen and (max-width: 670px){
     .post-wrapper{
     grid-template-columns: 1fr;
-
 }
