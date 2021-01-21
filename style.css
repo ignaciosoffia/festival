@@ -242,12 +242,12 @@ hr.solid {
     color: transparent;
     -webkit-text-fill-color: transparent;
     display: inline-block;
-
 }
 
 @media screen and (max-width: 1080px){
     .main-container{
         width: 90%
+    }
 }
 
 @media screen and (max-width: 670px){
@@ -258,10 +258,12 @@ hr.solid {
         'left-column'
         'right-column'
     ;
+    }
 }
 
 
 @media screen and (max-width: 670px){
-    .post-wrapper{
+    .post-wrapper {
     grid-template-columns: 1fr;
+    }
 }
