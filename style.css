@@ -70,14 +70,23 @@ hr.solid {
   margin: 0px;
 }
 
+body {
+    font-family:"Arial", cursive;
+}
+#page {
+    display: none;
+}
 #loading {
-    background: url('spinner.gif') no-repeat center center;
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 9999999;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("spinner.gif");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .s1 {

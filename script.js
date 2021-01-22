@@ -1,8 +1,19 @@
-function hideLoader() {
-    $('#loading').hide();
+function onReady(callback) {
+    var intervalID = window.setInterval(checkReady, 1000);
+
+    function checkReady() {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+            window.clearInterval(intervalID);
+            callback.call(this);
+        }
+    }
 }
 
-$(window).ready(hideLoader);
+function show(id, value) {
+    document.getElementById(id).style.display = value ? 'block' : 'none';
+}
 
-// Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
-setTimeout(hideLoader, 1.5 * 1000);
+onReady(function () {
+    show('page', true);
+    show('loading', false);
+});
