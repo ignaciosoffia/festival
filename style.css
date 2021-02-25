@@ -166,6 +166,10 @@ body {
     transition: box-shadow 0.3s ease-in-out;
 }
 
+.done{
+    opacity: 0.5;
+}
+
 .post:hover
     {
     box-shadow:
