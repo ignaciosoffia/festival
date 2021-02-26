@@ -42,7 +42,7 @@ function startTimer(duration, display) {
 }
 
 window.onload = function () {
-    var countDownDate = new Date("Feb 26, 2021 17:35:00").getTime();
+    var countDownDate = new Date("Feb 26, 2021 21:30:00").getTime();
     var currentDate = new Date();
     var currentTime = currentDate.getTime();
     var time = (countDownDate - currentTime) / 1000;  // Tiempo en segundos
